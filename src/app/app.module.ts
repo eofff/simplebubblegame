@@ -8,6 +8,7 @@ import { ScreenNewGameComponent } from './screen-new-game/screen-new-game.compon
 import { ScreenMainComponent } from './screen-main/screen-main.component';
 import { ScreenEndComponent } from './screen-end/screen-end.component';
 import { RouterModule } from '@angular/router';
+import { HealthBarComponent } from './screen-main/health-bar/health-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
     ScreenComponent,
     ScreenNewGameComponent,
     ScreenMainComponent,
-    ScreenEndComponent
+    ScreenEndComponent,
+    HealthBarComponent
   ],
   imports: [
     BrowserModule,
