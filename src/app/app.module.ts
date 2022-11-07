@@ -3,16 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ScreenComponent } from './screen/screen.component';
+import { ScreenNewGameComponent } from './screen-new-game/screen-new-game.component';
+import { ScreenMainComponent } from './screen-main/screen-main.component';
+import { ScreenEndComponent } from './screen-end/screen-end.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScreenComponent,
+    ScreenNewGameComponent,
+    ScreenMainComponent,
+    ScreenEndComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: '', component: ScreenComponent }
+    ]),
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
