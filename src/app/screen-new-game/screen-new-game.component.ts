@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { of } from 'rxjs';
+
+import { GameLogicService } from '../game-logic.service';
 
 @Component({
   selector: 'app-screen-new-game',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScreenNewGameComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gameLogicService: GameLogicService) { }
 
   ngOnInit(): void {
+  }
+
+  newGameClick(): void {
+    this.gameLogicService.setActiveScene("main");
   }
 
 }

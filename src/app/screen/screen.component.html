@@ -1,1 +1,3 @@
-<div class="screen"><app-screen-main></app-screen-main></div>
+<div *ngIf="activeScene === 'main'" class="screen"><app-screen-main></app-screen-main></div>
+<div *ngIf="activeScene === 'new-game'" class="screen"><app-screen-new-game></app-screen-new-game></div>
+<div *ngIf="activeScene === 'end'" class="screen"><app-screen-end></app-screen-end></div>

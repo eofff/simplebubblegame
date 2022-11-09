@@ -9,6 +9,7 @@ import { ScreenMainComponent } from './screen-main/screen-main.component';
 import { ScreenEndComponent } from './screen-end/screen-end.component';
 import { RouterModule } from '@angular/router';
 import { HealthBarComponent } from './screen-main/health-bar/health-bar.component';
+import { BubbleComponent } from './bubble/bubble.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HealthBarComponent } from './screen-main/health-bar/health-bar.componen
     ScreenNewGameComponent,
     ScreenMainComponent,
     ScreenEndComponent,
-    HealthBarComponent
+    HealthBarComponent,
+    BubbleComponent
   ],
   imports: [
     BrowserModule,
