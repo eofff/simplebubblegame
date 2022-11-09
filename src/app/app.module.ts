@@ -9,7 +9,7 @@ import { ScreenMainComponent } from './screen-main/screen-main.component';
 import { ScreenEndComponent } from './screen-end/screen-end.component';
 import { RouterModule } from '@angular/router';
 import { HealthBarComponent } from './screen-main/health-bar/health-bar.component';
-import { BubbleComponent } from './bubble/bubble.component';
+import { BubbleComponent } from './screen-main/bubble/bubble.component';
 
 @NgModule({
   declarations: [

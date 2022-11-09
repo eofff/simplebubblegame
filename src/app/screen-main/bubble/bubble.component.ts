@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { GameLogicService } from '../game-logic.service';
+import { GameLogicService } from '../../game-logic.service';
 
 @Component({
   selector: 'app-bubble',
