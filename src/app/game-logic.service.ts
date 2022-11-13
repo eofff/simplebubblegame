@@ -12,6 +12,7 @@ export class GameLogicService {
 
   private _beginSize = 30;
   private _speed: number = 0.5;
+  private _max_speed: number = 200;
   private _acceleration: number = 0.1;
   private _maxBubbleSize: number = 300;
 
@@ -52,6 +53,9 @@ export class GameLogicService {
   public popBubble() : void {
     this._gameStateValue.Scores += 1;
     this._speed += this._acceleration;
+    if (this._speed > this._max_speed) {
+      this._speed = this._max_speed;
+    }
     this.randomBubble();
   }
 
